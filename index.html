@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNX - PA SYSTEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="text-center py-4">CNX PA</h1>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card custom-card shadow p-4">
+                    <h4 class="mb-3">Dados SAP:</h4>
+                    <div class="form-section">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="txt_cod_sap_cliente">Código SAP Cliente:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="txt_cod_sap_cliente">
+                                    <button type="button" class="btn btn-primary" id="btn_limpar_cod_sap">
+                                        <i class="fa-solid fa-eraser" title=""></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group mb-3">
+                                <label for="txt_leitura_atual">Leitura Atual:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="txt_leitura_atual">
+                                    <button type="button" class="btn btn-primary" id="btn_limpar_leitura_atual">
+                                        <i class="fa-solid fa-eraser" title=""></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_leitura_anterior">Leitura Anterior:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="txt_leitura_anterior">
+                                    <button type="button" class="btn btn-primary" id="btn_limpar_leitura_anterior">
+                                        <i class="fa-solid fa-eraser" title=""></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_fator">Fator:</label>
+                                <input type="number" class="form-control" id="txt_fator" value="2.3" step=".1">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_meses">Meses:</label>
+                                <input type="number" class="form-control" id="txt_meses" value="6">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <h4 class="mb-3">Análise de consumo:</h4>
+                    <div class="form-section">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="txt_m3">M3:</label>
+                                <input type="text" class="form-control" id="txt_m3">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_consumo">Consumo:</label>
+                                <input type="text" class="form-control" id="txt_consumo">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_media">Média:</label>
+                                <input type="text" class="form-control" id="txt_media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

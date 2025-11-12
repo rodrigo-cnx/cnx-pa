@@ -1,0 +1,52 @@
+Análise de consumo: 
+
+Demonstrativo reclamado: xx/xx/xxxx 
+
+Valor Demonstrativo reclamado> R$xx,xx 
+
+Intervalo de leitura: xx dias 
+
+Teste de fuga realizado: (  ) Sim (  ) Não 
+
+Condição de leitura: (  ) Normal (  ) Média 
+
+Demonstrativo anterior foi feito pela média: (  ) Sim (  ) Não 
+
+Medição/leitura anterior na evidência: 
+
+Evidência de leitura está disponível: (  ) Sim (  ) Não 
+
+Se evidência disponível, a leitura está correta: (  ) Sim (  ) Não 
+
+Leitura no demonstrativo: 
+
+Leitura na evidência: 
+
+Há cobrança de taxas/multa: (  ) Sim (  ) Não 
+
+Média de consumo dos últimos 6 meses em M3: 
+
+Consumo do demonstrativo reclamado em M3: 
+
+Informe a análise detalhada: 
+
+---------------------------------------------
+
+email: 
+
+nome: 
+
+código sap condomínio: 
+
+
+
+---------------------------------------------
+
+verificar débitos antes de iniciar a Análise
+
+analisar casos anteriores
+
+medidor travado
+
+---------------------------------------------
+
