@@ -6,15 +6,22 @@ const txt_fator = document.getElementById('txt_fator');
 const txt_meses = document.getElementById('txt_meses');
 const txt_m3 = document.getElementById('txt_m3');
 const txt_consumo = document.getElementById('txt_consumo');
-const txt_media = document.getElementById('txt_media');
 const txt_valor_devido = document.getElementById('txt_valor_devido');
 const txt_preco_unitario = document.getElementById('txt_preco_unitario');
+const txt_valor1 = document.getElementById('txt_valor1');
+const txt_valor2 = document.getElementById('txt_valor2');
+const txt_valor3 = document.getElementById('txt_valor3');
+const txt_valor4 = document.getElementById('txt_valor4');
+const txt_valor5 = document.getElementById('txt_valor5');
+const txt_valor6 = document.getElementById('txt_valor6');
+const txt_media = document.getElementById('txt_media');
 
 const numeros_permitidos = ["0","1","2","3","4","5","6","7","8","9","."];
 
 const btn_limpar_cod_sap = document.getElementById('btn_limpar_cod_sap');
 const btn_limpar_leitura_atual = document.getElementById('btn_limpar_leitura_atual');
 const btn_limpar_leitura_anterior = document.getElementById('btn_limpar_leitura_anterior');
+const btn_calcular_media = document.getElementById('btn_calcular_media');
 
 btn_limpar_cod_sap.addEventListener('click', function () {
     txt_cod_sap_cliente.value = '';
@@ -58,6 +65,10 @@ txt_leitura_anterior.addEventListener('change', function () {
     calcularValorDevido();
 });
 
+btn_calcular_media.addEventListener('click', function () {
+    calcularMedia();
+});
+
 function calcularM3() {
     const leitura_atual = parseFloat(txt_leitura_atual.value.trim());
     const leitura_anterior = parseFloat(txt_leitura_anterior.value.trim());
@@ -86,6 +97,45 @@ function calcularValorDevido() {
     if (consumo > 0 && preco_unitario > 0) {
         txt_valor_devido.value = consumo * preco_unitario;
     }
+}
+
+function calcularMedia() {
+    const valor1 = parseFloat(txt_valor1.value.trim());
+    const valor2 = parseFloat(txt_valor2.value.trim());
+    const valor3 = parseFloat(txt_valor3.value.trim());
+    const valor4 = parseFloat(txt_valor4.value.trim());
+    const valor5 = parseFloat(txt_valor5.value.trim());
+    const valor6 = parseFloat(txt_valor6.value.trim());
+
+    txt_media.value = "";
+
+    let valores = [
+        (isNaN(valor1)) ? 0 : valor1, 
+        (isNaN(valor2)) ? 0 : valor2,
+        (isNaN(valor3)) ? 0 : valor3,
+        (isNaN(valor4)) ? 0 : valor4,
+        (isNaN(valor5)) ? 0 : valor5,
+        (isNaN(valor6)) ? 0 : valor6
+    ];
+
+    let i = 0;
+    valores.forEach(valor => {
+        if (valor > 0) {
+            i++;
+        }
+    });
+    // alert(i);
+
+    let total_valores = valores.reduce((a, b) => a + b, 0);
+    // alert(total_valores);
+
+    let media = total_valores / i;
+
+    if(!isNaN(media)) {
+        txt_media.value = media;
+    }
+
+    // alert(media);
 }
 
 function achouNumero(numero_digitado) {
