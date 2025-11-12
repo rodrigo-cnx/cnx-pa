@@ -84,7 +84,7 @@ function calcularValorDevido() {
 
     txt_valor_devido.value = "";
     if (consumo > 0 && preco_unitario > 0) {
-        txt_valor_devido.value = preco_unitario * preco_unitario;
+        txt_valor_devido.value = consumo * preco_unitario;
     }
 }
 
