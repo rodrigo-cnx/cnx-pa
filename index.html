@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <a href="#div_analise_completa" class="form-control btn btn-primary" id="btn_preencher"  data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_analise_completa">
+                                <a href="#div_analise_completa" class="form-control btn btn-primary" id="btn_preencher" data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_analise_completa">
                                     Análise Completa <i class="fa-solid fa-pencil"></i>
                                 </a>
                             </div>
@@ -78,40 +78,81 @@
                                         </button>
                                     </div>
                                 </div>
+                                <div class="col-md-8">
+                                    <label>Tipo de utilização:</label>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <input type="checkbox" class="btn-check" id="cbx_fogao" autocomplete="off">
+                                    <label class="btn" for="cbx_fogao">Fogão</label>
+                                    <input type="checkbox" class="btn-check" id="cbx_chuveiro" autocomplete="off">
+                                    <label class="btn" for="cbx_chuveiro">Chuveiro</label>
+                                    <input type="checkbox" class="btn-check" id="cbx_outros" autocomplete="off" href="#div_tipo_outros" data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_analise_completa">
+                                    <label class="btn" for="cbx_outros">Outros:</label>
+                                </div>
+                                <div class="col-md-8 container collapse" id="div_tipo_outros" style="padding-top: 15px; padding-bottom: 15px; border-radius: 5px">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="txt_tipo_outros" placeholder="Especifique aqui o(s) tipo(s)">
+                                        <button type="button" class="btn btn-primary" id="btn_tipo_outros">
+                                            <i class="fa-solid fa-eraser" title="Limpar Outros Especificar"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                     <pre>
-                                        : xx/xx/xxxx 
+Data Medidor (ano): 
+xx
 
-                                        Tipo de utilização: (  ) Fogão (  ) Chuveiro (  ) Outros especificar: 
+Valor Demonstrativo reclamado:
+R$xx,xx 
 
-                                        Medidor (mês/ano): 
+Intervalo de leitura:
+xxx dias 
 
-                                        Valor Demonstrativo reclamado> R$xx,xx 
+Risco de morte:
+(  ) Sim (  ) Não
 
-                                        Intervalo de leitura: xx dias 
+Teste de fuga realizado:
+(  ) Sim (  ) Não 
 
-                                        Teste de fuga realizado: (  ) Sim (  ) Não 
+Condição de leitura:
+(  ) Normal (  ) Média 
 
-                                        Condição de leitura: (  ) Normal (  ) Média 
+Demonstrativo anterior:
+(  ) Média (  ) Normal 
 
-                                        Demonstrativo anterior foi feito pela média: (  ) Sim (  ) Não 
+Medição/leitura anterior na evidência: 
+xxxx.xxx
 
-                                        Medição/leitura anterior na evidência: 
+Evidência de leitura disponível:
+(  ) Sim (  ) Não 
 
-                                        Evidência de leitura está disponível: (  ) Sim (  ) Não 
+Se evidência disponível, leitura correta:
+(  ) Sim (  ) Não 
 
-                                        Se evidência disponível, a leitura está correta: (  ) Sim (  ) Não 
+Leitura no demonstrativo: 
+xxxx.xxx
 
-                                        Leitura no demonstrativo: 
+Leitura na evidência:
+xxxx.xxx
 
-                                        Leitura na evidência: 
+Há cobrança de taxas/multa:
+(  ) Sim (  ) Não 
 
-                                        Há cobrança de taxas/multa: (  ) Sim (  ) Não 
+Média de consumo dos últimos 6 meses em M3: 
+xxxx.xxxx
 
-                                        Média de consumo dos últimos 6 meses em M3: 
+Consumo do demonstrativo reclamado em M3: 
+xxxx.xxxx
 
-                                        Consumo do demonstrativo reclamado em M3: 
+Tipo Cliente:
+(  ) Residencial (  ) Comercial (  ) Shopping
 
-                                        Informe a análise detalhada: 
+Entrada Atendimento:
+(  ) Voz (  ) Email (  ) Portal (  ) Whatsapp
+
+Leitura além do limite:
+(  ) Sim (  ) Não
+
+Informe a análise detalhada: 
                                     </pre>
                                 </div>
                             </div>
