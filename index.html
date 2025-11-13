@@ -106,25 +106,55 @@
                                         </button>
                                     </div>
                                 </div>
-                                    <pre>
-Valor Demonstrativo reclamado:
-R$xx,xx 
-
-Intervalo de leitura:
-xxx dias 
-
-Risco de morte:
-(  ) Sim (  ) Não
-
-Teste de fuga realizado:
-(  ) Sim (  ) Não 
-
-Condição de leitura:
-(  ) Normal (  ) Média 
-
-Demonstrativo anterior:
-(  ) Média (  ) Normal 
-
+                                <div class="col-md-8">
+                                    <label for="txt_valor_demonstrativo_reclamado">Valor Demonstrativo Reclamado:</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="txt_valor_demonstrativo_reclamado" min="0">
+                                        <button type="button" class="btn btn-primary" id="btn_valor_demonstrativo_reclamado">
+                                            <i class="fa-solid fa-eraser" title="Limpar Valor Demonstrativo Reclamado"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <label for="txt_intervalo_leitura">Intervalo de Leitura (em dias):</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="txt_intervalo_leitura" min="0">
+                                        <button type="button" class="btn btn-primary" id="btn_valor_demonstrativo_reclamado">
+                                            <i class="fa-solid fa-eraser" title="Limpar Intervalo de Leitura"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="cbx_risco_morte">
+                                        <label class="form-check-label" for="cbx_risco_morte">Risco de Morte</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="cbx_teste_fuga">
+                                        <label class="form-check-label" for="cbx_teste_fuga">Teste de Fuga Realizado</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="form-check-label">Condição de leitura:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="radio" class="btn-check" name="rdg_leitura" id="rdg_leitura_normal" autocomplete="off" checked>
+                                    <label class="btn btn-secondary" for="rdg_leitura_normal">Normal</label>
+                                    <input type="radio" class="btn-check" name="rdg_leitura" id="rdg_leitura_media" autocomplete="off">
+                                    <label class="btn btn-secondary" for="rdg_leitura_media">Média</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="form-check-label">Condição de leitura anterior:</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="radio" class="btn-check" name="rdg_leitura_anterior" id="rdg_leitura_anterior_normal" autocomplete="off" checked>
+                                    <label class="btn btn-secondary" for="rdg_leitura_anterior_normal">Normal</label>
+                                    <input type="radio" class="btn-check" name="rdg_leitura_anterior" id="rdg_leitura_anterior_media" autocomplete="off">
+                                    <label class="btn btn-secondary" for="rdg_leitura_anterior_media">Média</label>
+                                </div>
+                                <pre>
 Medição/leitura anterior na evidência: 
 xxxx.xxx
 
@@ -152,11 +182,17 @@ xxxx.xxxx
 Tipo Cliente:
 (  ) Residencial (  ) Comercial (  ) Shopping
 
+Bloco / Apartamento:
+xxxx / xxxxxxxxx
+
 Entrada Atendimento:
 (  ) Voz (  ) Email (  ) Portal (  ) Whatsapp
 
 Leitura além do limite:
 (  ) Sim (  ) Não
+
+Código do Medidor:
+0000000000
 
 Informe a análise detalhada: 
                                     </pre>
