@@ -1,6 +1,12 @@
 Análise de consumo: 
 
+Inadimplente: (  ) Sim (  ) Não
+
 Demonstrativo reclamado: xx/xx/xxxx 
+
+Tipo de utilização: (  ) Fogão (  ) Chuveiro (  ) Outros especificar: 
+
+Medidor (mês/ano): 
 
 Valor Demonstrativo reclamado> R$xx,xx 
 
@@ -53,3 +59,6 @@ medidor travado
 Prezado(a) Sr. ___, esperamos que esteja bem.
 
 Gostaríamos de informar que verificamos sua solicitação referente à conta com vencimento em xx/xx/xxx, pela qual foi analisado que ...
+
+---------------------------------------------
+

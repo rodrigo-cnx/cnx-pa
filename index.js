@@ -147,3 +147,9 @@ function achouNumero(numero_digitado) {
     });
     return achou;
 }
+
+$(document).ready(function() {
+    $('#txt_demonstrativo_reclamado').mask('00/00/0000'); // Defines a mask for dd/mm/yyyy
+});
+
+// alert("ok");
