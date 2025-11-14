@@ -149,24 +149,24 @@ function achouNumero(numero_digitado) {
 }
 
 $(document).ready(function() {
-//     $('#txt_leitura_atual').mask('00000.000');
-//     $('#txt_leitura_anterior').mask('00000.000');
-//     $('#txt_cod_sap_cliente').mask('0000000000');
-//     $('#txt_num_caso').mask('0000000000');
-//     $('#txt_demonstrativo_reclamado').mask('00/00/0000');
-//     $('#txt_ano_medidor').mask('0000');
-//     $('#txt_valor_demonstrativo_reclamado').mask('0000.00');
-//     // em construção...
-//     $('#txt_fator').mask('0.0');
-//     $('#txt_meses').mask('00');
-//     $('#txt_preco_unitario').mask('0000.000');
-//     $('#txt_valor_devido').mask('R$00000,00');
-//     $('#txt_valor1').mask('0000.0000');
-//     $('#txt_valor2').mask('0000.0000');
-//     $('#txt_valor3').mask('0000.0000');
-//     $('#txt_valor4').mask('0000.0000');
-//     $('#txt_valor5').mask('0000.0000');
-//     $('#txt_valor6').mask('0000.0000');
+    $('#txt_leitura_atual').mask('00000.000');
+    $('#txt_leitura_anterior').mask('00000.000');
+    $('#txt_cod_sap_cliente').mask('0000000000');
+    $('#txt_num_caso').mask('0000000000');
+    $('#txt_demonstrativo_reclamado').mask('00/00/0000');
+    $('#txt_ano_medidor').mask('0000');
+    $('#txt_valor_demonstrativo_reclamado').mask('0000.00');
+    // em construção...
+    $('#txt_fator').mask('0.0');
+    $('#txt_meses').mask('00');
+    $('#txt_preco_unitario').mask('0000.000');
+    $('#txt_valor_devido').mask('R$00000,00');
+    $('#txt_valor1').mask('0000.0000');
+    $('#txt_valor2').mask('0000.0000');
+    $('#txt_valor3').mask('0000.0000');
+    $('#txt_valor4').mask('0000.0000');
+    $('#txt_valor5').mask('0000.0000');
+    $('#txt_valor6').mask('0000.0000');
 });
 
-alert("ok");
+// alert("ok");
